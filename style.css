@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#fff;
+    width: cover;
+    
+}
+
+.comp-version{
+    display: none;
+    font-family: poppins;
+}
+
+header{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em 1.2em;
+}
+#logo{
+    width: 20%;
+}
+
+#profile,
+#message{
+    width: 10%;
+    height: 10%;
+    cursor: pointer;
+}
+
+.main-image{
+    position: relative;
+    background-color: #fff;
+    padding: 0 0.5em;
+    color: #fff;
+}
+
+#photo{
+    width: 100%;
+    min-width: 200px;
+    max-width: 650px;
+    border-radius: 15px;
+}
+
+.info{
+    position: absolute;
+    bottom: 2em;
+    left: 1.5em;
+    gap: 0.5em;
+    font-family: Poppins;
+    max-width: 250px;
+}
+#data{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#bio{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #B7B7B7;
+}
+
+.buttons{
+    padding-top: 1em;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+}
+#nope-btn,
+#like-btn{
+    border-radius: 50%;
+    border: none;
+    background-color: #fff;
+    box-shadow: 0px 10px 20px #E9E9EA;;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#like-btn:hover,
+#like-btn:active,
+#like-btn:focus{
+    background-color: #DBFFF4;
+}
+
+#nope-btn:hover,
+#nope-btn:active,
+#nope-btn:focus{
+    background-color: #FFE7EF;
+}
+
+.buttons img{
+    width: 35px;
+    height: 35px;
+}
+
+#badge{
+    width: 50%;
+    transform: rotate(-30deg);
+}
+.badge{
+    position: absolute;
+    top: 11em;
+    left: 2em;
+}
+
+.start-btn{
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#start{
+    min-width: 300px;
+    max-width: 400px;
+    font-family: poppins;
+    font-size: 3rem;
+    font-weight: 700;
+    background-color: rgb(252, 53, 152);
+    color: rgb(211, 188, 188);
+    padding: 0.3em 0.5em;
+    border-radius: 2em;
+    border: none;
+}
+
+@media(min-width:700px){
+    .comp-version{
+        display: contents;
+        text-align: center;
+    }
+    header,
+    main{
+        display: none;
+    }
+}
+
+
